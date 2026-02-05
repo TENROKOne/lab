@@ -1,0 +1,20 @@
+# sed - search and replace
+echo "hello" | sed 's/hello/hi/'
+
+# awk - extract fields
+echo "one two three" | awk '{print $2}'
+
+# tr - translate characters
+echo "hello" | tr 'a-z' 'A-Z'
+
+# cut - extract columns
+echo "a:b:c" | cut -d: -f2
+
+# External command
+filename=$(echo "document.txt" | sed 's/.txt//') 
+echo $filename
+
+# Parameter expansion
+filename="document.txt" 
+echo "${filename%.txt}"
+
